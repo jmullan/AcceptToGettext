@@ -1,0 +1,27 @@
+{
+    "name": "AcceptToGettext",
+    "description": "Examine Accept-* headers and choose the correct gettext locale",
+    "keywords": ["gettext"],
+    "license": "GPL-2",
+    "authors": [
+        {
+            "name": "Jesse Mullan",
+            "email": "jmullan@visi.com"
+        },
+        {
+            "name": "Wouter Verhelst <wouter@grep.be>",
+            "email": "wouter@grep.be"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "AcceptToGettext\\": "./src/"
+        }
+    }
+}
