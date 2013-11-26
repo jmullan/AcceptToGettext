@@ -1,5 +1,5 @@
 {
-    "name": "AcceptToGettext",
+    "name": "jmullan/accepttogettext",
     "description": "Examine Accept-* headers and choose the correct gettext locale",
     "keywords": ["gettext"],
     "license": "GPL-2",
