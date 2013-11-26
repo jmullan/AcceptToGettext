@@ -2,7 +2,7 @@
     "name": "jmullan/accepttogettext",
     "description": "Examine Accept-* headers and choose the correct gettext locale",
     "keywords": ["gettext"],
-    "license": "GPL-2",
+    "license": "GPL-2.0",
     "authors": [
         {
             "name": "Jesse Mullan",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-0": {
-            "AcceptToGettext\\": "./src/"
+            "AcceptToGettext\\": "src/"
         }
     }
 }
