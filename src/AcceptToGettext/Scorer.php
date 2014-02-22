@@ -101,6 +101,9 @@ class Scorer
             $gettext_charset = 'UTF-8';
         }
         $gettext_parts = explode('-', $gettext_language_plus_country);
+        if (!isset($gettext_parts[1])) {
+            $gettext_parts[1] = '';
+        }
         $exploded = array(
             'language_plus_country' => $gettext_language_plus_country,
             'language' => $gettext_parts[0],
@@ -231,7 +234,7 @@ class Scorer
         $result = self::pickLocale($gettext_locales, $_SERVER);
         $lang = $result[0];
         $charset = $result[1];
-        $best_gettext_locale = $result[3];
+        $best_gettext_locale = $result[2];
         self::sendHeaders($lang, $mimetype, $charset);
         return $best_gettext_locale;
     }

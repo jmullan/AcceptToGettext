@@ -14,5 +14,8 @@ class ScorerTest extends \PHPUnit_Framework_TestCase
 
         $result = $scorer->pickLocale(array('de_DE', 'cs_CZ.UTF-8'), array('HTTP_ACCEPT_LANGUAGE' => 'cs'));
         $this->assertEquals($result, array ('cs-cz', 'UTF-8', 'cs_CZ.UTF-8'));
+
+        $result = $scorer->pickLocale(array('en'), array('HTTP_ACCEPT_LANGUAGE' => 'en'));
+        $this->assertEquals($result, array ('en', 'UTF-8', 'en'));
     }
 }
